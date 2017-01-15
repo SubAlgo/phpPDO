@@ -42,6 +42,9 @@
 			AND category_id = ?
 	';
 
+	/*
+		Prepare Statement
+	*/
 	$stmt = $db_con->prepare($sql);
 
 	$stmt->execute(array("Lorna",3));
